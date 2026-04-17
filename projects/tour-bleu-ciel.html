@@ -4,11 +4,16 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Tour Bleu Ciel — Nicolas Lundström</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="../index.html">Nicolas&nbsp;Lundström</a>
+<div class="grain"></div>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="../index.html">Nicolas<span class="brand-sep"> — </span>Lundström</a>
   <nav>
     <a href="../index.html#work">Work</a>
     <a href="../index.html#about">About</a>
@@ -17,57 +22,77 @@
 </header>
 
 <section class="project-hero">
-  <a class="back" href="../index.html#work">← All Work</a>
+  <a class="back-link" href="../index.html#work">All Work</a>
   <h1>Tour Bleu Ciel</h1>
-  <div class="project-meta">
-    <div><span>Location</span>Harwood Village, Dallas, USA</div>
-    <div><span>Scale</span>42,800 m² · 114 m · 32 storeys</div>
-    <div><span>Units</span>158 luxury apartments · 7,500 m² of terraces</div>
-    <div><span>Office</span>Wilmotte &amp; Associés</div>
+  <div class="project-meta-bar">
+    <div class="project-meta-item"><div class="label">Location</div><div class="value">Harwood Village, Dallas, TX</div></div>
+    <div class="project-meta-item"><div class="label">Scale</div><div class="value">42,800 m² · 114 m · 32 storeys</div></div>
+    <div class="project-meta-item"><div class="label">Units</div><div class="value">158 luxury apartments</div></div>
+    <div class="project-meta-item"><div class="label">Terraces</div><div class="value">7,500 m² planted terraces</div></div>
+    <div class="project-meta-item"><div class="label">Firm</div><div class="value">Wilmotte &amp; Associés</div></div>
   </div>
 </section>
 
 <div class="project-cover">
-  <div class="img" style="background-image:url('https://picsum.photos/seed/bleuciel-hero/1800/1000')"></div>
+  <img class="project-cover-img" src="../images/bleu-ciel.jpg" alt="Tour Bleu Ciel, Dallas" />
 </div>
 
-<section class="project-body">
-  <aside>
-    <strong>Client</strong>Harwood International
-    <strong>Programme</strong>Luxury residential tower
-    <strong>Signature</strong>Cascading planted terraces
+<div class="project-content">
+  <aside class="project-sidebar">
+    <div class="sib-group">
+      <strong>Client</strong>
+      Harwood International
+    </div>
+    <div class="sib-group">
+      <strong>Type</strong>
+      Luxury residential tower
+    </div>
+    <div class="sib-group">
+      <strong>Signature</strong>
+      Cascading planted terraces
+    </div>
   </aside>
-  <div>
+
+  <div class="project-text">
     <h2>A Parisian sensibility in downtown Dallas.</h2>
     <p>
       Rising 114 metres above Harwood Village, Tour Bleu Ciel stacks 158
-      high-specification residences across 32 floors and wraps them in
-      7,500 m² of planted, outdoor terraces. The tower brings a European
-      language of setbacks and loggias to a Texas skyline defined by flat,
-      sealed glass curtain walls.
+      high-specification residences across 32 floors and wraps them in 7,500 m²
+      of planted, outdoor terraces. The tower brings a European language of setbacks
+      and loggias to a Texas skyline defined by sealed glass curtain walls.
     </p>
-    <h3>Role</h3>
+    <h3>Façade &amp; Terraces</h3>
     <p>
-      Nicolas worked on the tower as a senior designer in the Paris studio,
-      with input on façade modulation, unit mix studies and the coordination
-      of the planted terraces as architectural — rather than purely
-      landscape — elements.
+      Nicolas worked on the tower as a senior designer in the Paris studio, with
+      lead input on façade modulation, unit mix studies and the design of the
+      planted terraces as architectural — not merely landscape — elements cascading
+      down the building's south face.
+    </p>
+    <h3>Urban Presence</h3>
+    <p>
+      At street level, the building contributes retail and activated pedestrian
+      frontage to the Harwood District's walkable urbanism — a considered transition
+      from the residential tower above to the neighbourhood below.
     </p>
   </div>
-</section>
+</div>
 
-<section class="gallery">
-  <div class="img wide" style="background-image:url('https://picsum.photos/seed/bleuciel-g1/1600/700')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/bleuciel-g2/1200/900')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/bleuciel-g3/1200/900')"></div>
-</section>
+<div class="project-gallery">
+  <div class="gallery-img span2" style="background-image:url('https://picsum.photos/seed/bleuciel-g1/1600/700')"></div>
+  <div class="gallery-img" style="background-image:url('https://picsum.photos/seed/bleuciel-g2/900/675')"></div>
+</div>
 
-<nav class="next-project">
-  <div><div class="label">Next Project</div><a href="smabtp.html">SMABTP Headquarters →</a></div>
-  <div><a href="../index.html#work">All Work</a></div>
+<nav class="project-nav">
+  <a class="all-link" href="../index.html#work">← All Work</a>
+  <div class="next-link">
+    <span class="next-label">Next Project</span>
+    <a class="next-title" href="smabtp.html">SMABTP Headquarters →</a>
+  </div>
 </nav>
 
-<footer class="site-footer"><p>© <span id="y"></span> Nicolas Lundström</p></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<footer class="site-footer">
+  <span class="mono">© <span id="yr"></span> Nicolas Lundström</span>
+</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>

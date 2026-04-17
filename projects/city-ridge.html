@@ -4,11 +4,16 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>City Ridge — Nicolas Lundström</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="../index.html">Nicolas&nbsp;Lundström</a>
+<div class="grain"></div>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="../index.html">Nicolas<span class="brand-sep"> — </span>Lundström</a>
   <nav>
     <a href="../index.html#work">Work</a>
     <a href="../index.html#about">About</a>
@@ -17,66 +22,83 @@
 </header>
 
 <section class="project-hero">
-  <a class="back" href="../index.html#work">← All Work</a>
+  <a class="back-link" href="../index.html#work">All Work</a>
   <h1>City Ridge</h1>
-  <div class="project-meta">
-    <div><span>Location</span>3900 Wisconsin Ave, Washington D.C.</div>
-    <div><span>Scale</span>1.8M sqft · 690 units · 9 buildings</div>
-    <div><span>Role</span>Team lead, 3 residential towers</div>
-    <div><span>Phases</span>DD / CD / CA</div>
-    <div><span>Office</span>Shalom Baranes Associates</div>
+  <div class="project-meta-bar">
+    <div class="project-meta-item"><div class="label">Location</div><div class="value">3900 Wisconsin Ave, Washington D.C.</div></div>
+    <div class="project-meta-item"><div class="label">Scale</div><div class="value">1.8M sqft · 690 units · 9 buildings</div></div>
+    <div class="project-meta-item"><div class="label">Role</div><div class="value">Team Lead, 3 residential towers</div></div>
+    <div class="project-meta-item"><div class="label">Phases</div><div class="value">DD / CD / CA</div></div>
+    <div class="project-meta-item"><div class="label">Firm</div><div class="value">Shalom Baranes Associates</div></div>
   </div>
 </section>
 
 <div class="project-cover">
-  <div class="img" style="background-image:url('https://picsum.photos/seed/cityridge-hero/1800/1000')"></div>
+  <img class="project-cover-img" src="../images/city-ridge.jpg" alt="City Ridge, Washington D.C." />
 </div>
 
-<section class="project-body">
-  <aside>
-    <strong>Client</strong>Roadside Development / North America Sekisui House
-    <strong>Programme</strong>Residential · Office · Retail · Public realm
-    <strong>Status</strong>Completed 2023
-    <strong>Website</strong><a href="https://www.cityridgedc.com" target="_blank" rel="noopener">cityridgedc.com</a>
+<div class="project-content">
+  <aside class="project-sidebar">
+    <div class="sib-group">
+      <strong>Client</strong>
+      Roadside Development &amp;<br/>North America Sekisui House
+    </div>
+    <div class="sib-group">
+      <strong>Programme</strong>
+      Residential · Office<br/>Retail · Public realm
+    </div>
+    <div class="sib-group">
+      <strong>Status</strong>
+      Completed 2023
+    </div>
+    <div class="sib-group">
+      <strong>Link</strong>
+      <a href="https://www.cityridgedc.com" target="_blank" rel="noopener">cityridgedc.com</a>
+    </div>
   </aside>
-  <div>
+
+  <div class="project-text">
     <h2>A neighbourhood, not a project.</h2>
     <p>
-      City Ridge reimagines a 10-acre site on upper Wisconsin Avenue — the former
+      City Ridge reimagines a ten-acre site on upper Wisconsin Avenue — the former
       Fannie Mae headquarters — as a genuine piece of urban fabric. Nine buildings,
       690 residences, over half a million square feet of office, a grocery-anchored
       retail street and a public park, woven through an existing mid-century campus
       by Kevin Roche.
     </p>
-    <h3>Role</h3>
+    <h3>Team Leadership</h3>
     <p>
-      As Executive Associate at Shalom Baranes Associates, Nicolas led the
-      design team on three of the nine towers across design development,
-      construction documents and construction administration. He also held
-      CA responsibility across six residential towers on the site.
+      As Executive Associate at Shalom Baranes Associates, Nicolas led the design
+      team on three of the nine towers through design development, construction
+      documents and construction administration. He also held CA responsibility
+      across all six residential towers on the site.
     </p>
-    <h3>Design focus</h3>
+    <h3>Design Focus</h3>
     <p>
       The work balanced the site's heritage — Roche's fortress-like stone volumes —
       with a finer-grained, pedestrian-scaled architecture at street level.
-      Material transitions, podium expression and the negotiation between
-      historic and new construction were central to the delivery.
+      Material transitions, podium expression and the negotiation between historic
+      and new construction were central disciplines of the project.
     </p>
   </div>
-</section>
+</div>
 
-<section class="gallery">
-  <div class="img wide" style="background-image:url('https://picsum.photos/seed/cityridge-g1/1600/700')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/cityridge-g2/1200/900')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/cityridge-g3/1200/900')"></div>
-</section>
+<div class="project-gallery">
+  <div class="gallery-img span2" style="background-image:url('https://picsum.photos/seed/cityridge-g1/1600/700')"></div>
+  <div class="gallery-img" style="background-image:url('https://picsum.photos/seed/cityridge-g2/900/675')"></div>
+</div>
 
-<nav class="next-project">
-  <div><div class="label">Next Project</div><a href="elm-wilson.html">The Elm &amp; The Wilson →</a></div>
-  <div><a href="../index.html#work">All Work</a></div>
+<nav class="project-nav">
+  <a class="all-link" href="../index.html#work">← All Work</a>
+  <div class="next-link">
+    <span class="next-label">Next Project</span>
+    <a class="next-title" href="elm-wilson.html">The Elm &amp; The Wilson →</a>
+  </div>
 </nav>
 
-<footer class="site-footer"><p>© <span id="y"></span> Nicolas Lundström</p></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<footer class="site-footer">
+  <span class="mono">© <span id="yr"></span> Nicolas Lundström</span>
+</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>

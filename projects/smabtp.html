@@ -4,11 +4,16 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>SMABTP Headquarters — Nicolas Lundström</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="../index.html">Nicolas&nbsp;Lundström</a>
+<div class="grain"></div>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="../index.html">Nicolas<span class="brand-sep"> — </span>Lundström</a>
   <nav>
     <a href="../index.html#work">Work</a>
     <a href="../index.html#about">About</a>
@@ -17,65 +22,78 @@
 </header>
 
 <section class="project-hero">
-  <a class="back" href="../index.html#work">← All Work</a>
+  <a class="back-link" href="../index.html#work">All Work</a>
   <h1>SMABTP Headquarters &amp; Hotel</h1>
-  <div class="project-meta">
-    <div><span>Location</span>Paris, France</div>
-    <div><span>Scale</span>34,000 m² offices · 5,000 m² hotel</div>
-    <div><span>Status</span>Competition winner</div>
-    <div><span>Sustainability</span>HQE · BREEAM Very Good · LEED Gold</div>
-    <div><span>Office</span>Wilmotte &amp; Associés</div>
+  <div class="project-meta-bar">
+    <div class="project-meta-item"><div class="label">Location</div><div class="value">Paris, France</div></div>
+    <div class="project-meta-item"><div class="label">Scale</div><div class="value">34,000 m² offices · 5,000 m² hotel</div></div>
+    <div class="project-meta-item"><div class="label">Status</div><div class="value">Competition winner</div></div>
+    <div class="project-meta-item"><div class="label">Sustainability</div><div class="value">HQE · BREEAM Very Good · LEED Gold</div></div>
+    <div class="project-meta-item"><div class="label">Firm</div><div class="value">Wilmotte &amp; Associés</div></div>
   </div>
 </section>
 
 <div class="project-cover">
-  <div class="img" style="background-image:url('https://picsum.photos/seed/smabtp-hero/1800/1000')"></div>
+  <img class="project-cover-img" src="../images/smabtp.jpg" alt="SMABTP Headquarters, Paris" />
 </div>
 
-<section class="project-body">
-  <aside>
-    <strong>Client</strong>SMABTP (Société Mutuelle d'Assurance du Bâtiment et des Travaux Publics)
-    <strong>Programme</strong>Corporate headquarters · Hotel
-    <strong>Phases</strong>APS / APD / Permis de construire
+<div class="project-content">
+  <aside class="project-sidebar">
+    <div class="sib-group">
+      <strong>Client</strong>
+      SMABTP
+    </div>
+    <div class="sib-group">
+      <strong>Programme</strong>
+      Corporate HQ · Hotel
+    </div>
+    <div class="sib-group">
+      <strong>Phases</strong>
+      APS / APD / Permis de construire
+    </div>
   </aside>
-  <div>
+
+  <div class="project-text">
     <h2>A headquarters for the French construction sector.</h2>
     <p>
-      The new headquarters for SMABTP brings together 34,000 m² of workplace
-      with a 5,000 m² hotel, won in competition and pursued through to planning
-      permission. The building is designed to triple certification — HQE,
-      BREEAM Very Good and LEED Gold — an unusual commitment in the Paris
-      office market at the time.
+      The new headquarters for SMABTP — the mutual insurance body for the French
+      construction industry — brings 34,000 m² of workplace together with a
+      5,000 m² hotel, won in competition and developed through to planning permission.
+      The building is designed to triple certification: HQE, BREEAM Very Good
+      and LEED Gold — an unusual commitment in the Paris office market at the time
+      of design.
     </p>
     <h3>Role</h3>
     <p>
-      Nicolas was senior project architect on the delivery team, working
-      from schematic design through design development and the French
-      <em>permis de construire</em> package, with responsibilities
-      spanning façade, plan and environmental strategy.
+      Nicolas was senior project architect on the delivery team, with responsibilities
+      spanning façade, planning and environmental strategy — from schematic design
+      through design development and the French <em>permis de construire</em> package.
     </p>
-    <h3>Sustainability as form</h3>
+    <h3>Sustainability as Form</h3>
     <p>
-      Passive strategies — orientation, depth of plan, solar shading — set
-      the envelope geometry rather than following it. The active systems
-      then tune a building that was designed to breathe well from the
-      outset.
+      Passive strategies — orientation, depth of plan, solar shading geometry —
+      set the envelope form rather than following it. Active systems then tune
+      a building that was designed to breathe well from its inception.
     </p>
   </div>
-</section>
+</div>
 
-<section class="gallery">
-  <div class="img wide" style="background-image:url('https://picsum.photos/seed/smabtp-g1/1600/700')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/smabtp-g2/1200/900')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/smabtp-g3/1200/900')"></div>
-</section>
+<div class="project-gallery">
+  <div class="gallery-img span2" style="background-image:url('https://picsum.photos/seed/smabtp-g1/1600/700')"></div>
+  <div class="gallery-img" style="background-image:url('https://picsum.photos/seed/smabtp-g2/900/675')"></div>
+</div>
 
-<nav class="next-project">
-  <div><div class="label">Next Project</div><a href="city-ridge.html">City Ridge →</a></div>
-  <div><a href="../index.html#work">All Work</a></div>
+<nav class="project-nav">
+  <a class="all-link" href="../index.html#work">← All Work</a>
+  <div class="next-link">
+    <span class="next-label">Back to Start</span>
+    <a class="next-title" href="city-ridge.html">City Ridge →</a>
+  </div>
 </nav>
 
-<footer class="site-footer"><p>© <span id="y"></span> Nicolas Lundström</p></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<footer class="site-footer">
+  <span class="mono">© <span id="yr"></span> Nicolas Lundström</span>
+</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>

@@ -4,180 +4,236 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Nicolas Lundström — Architect</title>
-<meta name="description" content="Nicolas Lundström, Registered Architect. Selected works spanning Washington, Paris, Nice, Maranello and Dallas." />
+<meta name="description" content="Nicolas Lundström — Registered Architect. Selected works spanning Washington D.C., Paris, Nice, Maranello and Dallas." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="index.html">Nicolas&nbsp;Lundström</a>
+
+<div class="grain"></div>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="index.html">Nicolas<span class="brand-sep"> — </span>Lundström</a>
   <nav>
-    <a href="index.html#work">Work</a>
-    <a href="index.html#about">About</a>
-    <a href="index.html#contact">Contact</a>
+    <a href="#work">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
-  <div class="hero-inner">
-    <p class="eyebrow">Registered Architect — Washington, D.C.</p>
-    <h1>Buildings that hold their ground<br/>and their moment.</h1>
-    <p class="lede">
-      Two decades of practice across Europe and North America — mixed-use towers,
-      cultural institutions, stadia and civic landmarks. Built for longevity,
-      drawn with care.
-    </p>
-    <a class="cta" href="#work">Selected Work ↓</a>
+  <div class="hero-eyebrow">
+    <span class="mono">Registered Architect</span>
+    <span class="hero-divider"></span>
+    <span class="mono">Washington, D.C.</span>
   </div>
+
+  <h1 class="hero-name">
+    <span class="line-wrap"><span class="line l1">Nicolas</span></span>
+    <span class="line-wrap"><span class="line l2">Lundström</span></span>
+  </h1>
+
+  <div class="hero-footer">
+    <div class="hero-stats">
+      <div class="stat">
+        <span class="stat-n">20<sup>+</sup></span>
+        <span class="stat-l">Years of practice</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">4</span>
+        <span class="stat-l">Countries</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">3</span>
+        <span class="stat-l">Languages</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n">3M<sup>+</sup></span>
+        <span class="stat-l">Square feet built</span>
+      </div>
+    </div>
+    <p class="hero-desc">
+      Two decades of practice — mixed-use towers, cultural institutions,<br/>
+      stadia and civic landmarks — built for longevity, drawn with care.
+    </p>
+  </div>
+
+  <a class="scroll-cue" href="#work" aria-label="View work">
+    <span class="scroll-line"></span>
+    <span class="mono">Scroll</span>
+  </a>
 </section>
 
 <section id="work" class="work">
-  <div class="section-head">
-    <span class="section-num">01</span>
-    <h2>Selected Work</h2>
+  <div class="section-label">
+    <span class="mono">01 — Selected Work</span>
+    <span class="rule-line"></span>
   </div>
 
-  <div class="grid">
+  <div class="project-grid">
 
-    <a class="card" href="projects/city-ridge.html">
-      <div class="card-img" style="background-image:url('https://picsum.photos/seed/cityridge/1200/900')"></div>
-      <div class="card-body">
-        <p class="card-meta">Mixed-Use · Washington, D.C. · 2016–2023</p>
+    <a class="pcard pcard--wide" href="projects/city-ridge.html" style="--img:url('../images/city-ridge.jpg')">
+      <div class="pcard-img"></div>
+      <div class="pcard-body">
+        <p class="pcard-meta"><span class="mono">01</span> Mixed-Use · Washington D.C. · 2016–2023</p>
         <h3>City Ridge</h3>
-        <p>1.8M sqft across nine buildings and 690 residences — team lead on three towers at the heart of Wisconsin Avenue's redevelopment.</p>
+        <p class="pcard-desc">1.8M sqft across nine buildings, 690 residences — team lead on three towers at the heart of Wisconsin Avenue's transformation.</p>
       </div>
     </a>
 
-    <a class="card" href="projects/elm-wilson.html">
-      <div class="card-img" style="background-image:url('https://picsum.photos/seed/elmwilson/1200/900')"></div>
-      <div class="card-body">
-        <p class="card-meta">High-Rise Mixed-Use · Bethesda, MD</p>
-        <h3>The Elm &amp; The Wilson</h3>
-        <p>Three 295-foot towers — 1.7M sqft of residential, office and retail over a shared podium linked to the Purple Line terminus.</p>
+    <a class="pcard" href="projects/orthodox-center.html" style="--img:url('../images/orthodox.jpg')">
+      <div class="pcard-img"></div>
+      <div class="pcard-body">
+        <p class="pcard-meta"><span class="mono">02</span> Cultural · Paris, Quai Branly</p>
+        <h3>Russian Orthodox<br/>Cultural Centre</h3>
+        <p class="pcard-desc">Cathedral, parish, school and cultural hall on the Seine — envelope and exterior works, concept through construction.</p>
       </div>
     </a>
 
-    <a class="card" href="projects/mars-hq.html">
-      <div class="card-img" style="background-image:url('https://picsum.photos/seed/marshq/1200/900')"></div>
-      <div class="card-body">
-        <p class="card-meta">Corporate HQ · McLean, VA</p>
-        <h3>MARS Inc. Global Headquarters</h3>
-        <p>Full SD through CA delivery of a flagship corporate campus for one of the world's largest privately held companies.</p>
+    <a class="pcard" href="projects/mars-hq.html" style="--img:url('../images/mars-hq.jpg')">
+      <div class="pcard-img"></div>
+      <div class="pcard-body">
+        <p class="pcard-meta"><span class="mono">03</span> Corporate HQ · McLean, VA</p>
+        <h3>MARS Inc.<br/>Global Headquarters</h3>
+        <p class="pcard-desc">Full SD through CA delivery of a flagship campus for one of the world's largest privately held companies.</p>
       </div>
     </a>
 
-    <a class="card" href="projects/orthodox-center.html">
-      <div class="card-img" style="background-image:url('https://picsum.photos/seed/orthodox/1200/900')"></div>
-      <div class="card-body">
-        <p class="card-meta">Cultural &amp; Religious · Paris, Quai Branly</p>
-        <h3>Russian Orthodox Spiritual &amp; Cultural Centre</h3>
-        <p>A cathedral, parish, school and cultural hall on the Seine — envelope and exterior works from concept through construction.</p>
-      </div>
-    </a>
-
-    <a class="card" href="projects/allianz-riviera.html">
-      <div class="card-img" style="background-image:url('https://picsum.photos/seed/allianz/1200/900')"></div>
-      <div class="card-body">
-        <p class="card-meta">Stadium · Nice, France · 35,000 seats</p>
+    <a class="pcard pcard--wide pcard--right" href="projects/allianz-riviera.html" style="--img:url('../images/allianz.jpg')">
+      <div class="pcard-img"></div>
+      <div class="pcard-body">
+        <p class="pcard-meta"><span class="mono">04</span> Stadium · Nice, France · 35,000 seats</p>
         <h3>Allianz Riviera Stadium</h3>
-        <p>Competition winner. Hybrid steel-and-glulam roof with ETFE cladding — full delivery from concept to site.</p>
+        <p class="pcard-desc">Competition winner. Hybrid steel-and-glulam roof with ETFE cladding — full delivery from concept through construction site.</p>
       </div>
     </a>
 
-    <a class="card" href="projects/ferrari-f1.html">
-      <div class="card-img" style="background-image:url('https://picsum.photos/seed/ferrari/1200/900')"></div>
-      <div class="card-body">
-        <p class="card-meta">Motorsport · Maranello, Italy · 24,000 m²</p>
-        <h3>Ferrari Formula 1 Sport Management Centre</h3>
-        <p>A new nerve centre for the Scuderia — design development through tender documents in the Italian regulatory framework.</p>
+    <a class="pcard pcard--wide" href="projects/elm-wilson.html" style="--img:url('../images/elm-wilson.jpg')">
+      <div class="pcard-img"></div>
+      <div class="pcard-body">
+        <p class="pcard-meta"><span class="mono">05</span> High-Rise · Bethesda, MD · 1.7M sqft</p>
+        <h3>The Elm &amp; The Wilson</h3>
+        <p class="pcard-desc">Three 295-ft towers — residential, office and retail — over a shared podium integrated with the Purple Line Bethesda terminus.</p>
       </div>
     </a>
 
-    <a class="card" href="projects/tour-bleu-ciel.html">
-      <div class="card-img" style="background-image:url('https://picsum.photos/seed/bleuciel/1200/900')"></div>
-      <div class="card-body">
-        <p class="card-meta">Residential Tower · Dallas, TX · 114m</p>
+    <a class="pcard" href="projects/ferrari-f1.html" style="--img:url('../images/ferrari.jpg')">
+      <div class="pcard-img"></div>
+      <div class="pcard-body">
+        <p class="pcard-meta"><span class="mono">06</span> Motorsport · Maranello, Italy</p>
+        <h3>Ferrari F1 Sport<br/>Management Centre</h3>
+        <p class="pcard-desc">A new nerve centre for the Scuderia — race strategy, engineering and hospitality under a precision-detailed envelope.</p>
+      </div>
+    </a>
+
+    <a class="pcard" href="projects/smabtp.html" style="--img:url('../images/smabtp.jpg')">
+      <div class="pcard-img"></div>
+      <div class="pcard-body">
+        <p class="pcard-meta"><span class="mono">07</span> HQ + Hotel · Paris</p>
+        <h3>SMABTP<br/>Headquarters</h3>
+        <p class="pcard-desc">Competition-winning HQ and hotel — BREEAM Very Good and LEED Gold, 39,000 m², from concept through permit.</p>
+      </div>
+    </a>
+
+    <a class="pcard pcard--wide pcard--right" href="projects/tour-bleu-ciel.html" style="--img:url('../images/bleu-ciel.jpg')">
+      <div class="pcard-img"></div>
+      <div class="pcard-body">
+        <p class="pcard-meta"><span class="mono">08</span> Residential Tower · Dallas, TX · 114 m</p>
         <h3>Tour Bleu Ciel</h3>
-        <p>A 32-storey luxury residential tower in Harwood Village — 158 apartments and 7,500 m² of terraces cantilevered over downtown.</p>
-      </div>
-    </a>
-
-    <a class="card" href="projects/smabtp.html">
-      <div class="card-img" style="background-image:url('https://picsum.photos/seed/smabtp/1200/900')"></div>
-      <div class="card-body">
-        <p class="card-meta">Headquarters &amp; Hotel · Paris</p>
-        <h3>SMABTP Headquarters</h3>
-        <p>Competition-winning HQ and hotel, 39,000 m² — BREEAM Very Good and LEED Gold, from concept through permit.</p>
+        <p class="pcard-desc">A 32-storey luxury tower in Harwood Village — 158 apartments draped across 7,500 m² of cascading planted terraces.</p>
       </div>
     </a>
 
   </div>
 </section>
 
-<section id="about" class="about">
-  <div class="section-head">
-    <span class="section-num">02</span>
-    <h2>About</h2>
+<section id="about" class="about reveal">
+  <div class="section-label">
+    <span class="mono">02 — About</span>
+    <span class="rule-line"></span>
   </div>
+
   <div class="about-grid">
-    <div class="about-portrait"></div>
+    <div class="about-portrait-wrap">
+      <img src="images/nicolas-portrait.png" alt="Nicolas Lundström" class="about-portrait" loading="lazy" />
+      <div class="about-portrait-caption mono">
+        Nicolas Lundström<br/>Executive Associate · Architect
+      </div>
+    </div>
+
     <div class="about-copy">
+      <h2>An architect who sees the whole city.</h2>
       <p>
-        Nicolas Lundström is a registered architect based in Washington, D.C.,
-        currently serving as Executive Associate at
-        <a href="https://www.sbaltd.com" target="_blank" rel="noopener">Shalom Baranes Associates</a>.
-        His practice spans mixed-use high-rise, cultural institutions, civic buildings
-        and large-scale stadia across the United States, France, Italy, Russia and China.
+        Nicolas Lundström is a registered architect currently serving as
+        Executive Associate at <a href="https://www.sbaltd.com" target="_blank" rel="noopener">Shalom Baranes Associates</a>
+        in Washington, D.C. His practice spans mixed-use high-rise, cultural
+        institutions, corporate campuses and major stadia across the United
+        States, France, Italy, Russia and China.
       </p>
       <p>
-        Over the past nine years in Washington he has led delivery on
-        <em>City Ridge</em>, <em>The Elm &amp; The Wilson</em> and the
-        <em>MARS Inc.</em> global headquarters. Previously, as Senior Project Architect
-        at <a href="https://www.wilmotte.com" target="_blank" rel="noopener">Wilmotte &amp; Associés</a>
-        in Paris, he delivered the <em>Allianz Riviera</em> stadium, the
-        <em>Russian Orthodox Cultural Centre</em> on the Quai Branly, the
-        <em>Ferrari F1 Sport Management Centre</em> in Maranello and the
-        <em>SMABTP</em> headquarters competition win.
+        Over nine years at Shalom Baranes, he has led teams on some of the
+        Washington region's most significant recent developments — City Ridge,
+        The Elm &amp; The Wilson, and the MARS Inc. global headquarters. Before
+        that, as Senior Project Architect at <a href="https://www.wilmotte.com" target="_blank" rel="noopener">Wilmotte &amp; Associés</a>
+        in Paris, he delivered the Allianz Riviera stadium, the Russian Orthodox
+        Cultural Centre on the Quai Branly, the Ferrari F1 Sport Management
+        Centre in Maranello, and the SMABTP headquarters competition win.
       </p>
       <p>
-        He trained at The Bartlett School of Architecture (UCL, M.Arch.) and
-        Oxford Brookes (B.Arch. Hons), with early experience at CZWG London,
-        Arte Charpentier Shanghai and Elizabeth de Portzamparc. He is a
-        registered architect with the French <em>Ordre des Architectes</em>
-        and holds RIBA Part I and Part II qualifications. He works in English,
-        French and Italian.
+        Trained at The Bartlett School of Architecture, UCL (M.Arch.) and
+        Oxford Brookes University (B.Arch. Hons), with formative experience
+        at CZWG London, Arte Charpentier Shanghai, and Elizabeth de Portzamparc.
+        He works in English, French and Italian.
       </p>
 
-      <dl class="facts">
-        <div><dt>Based</dt><dd>Washington, D.C.</dd></div>
-        <div><dt>Current</dt><dd>Executive Associate, Shalom Baranes Associates</dd></div>
-        <div><dt>Education</dt><dd>M.Arch, The Bartlett · B.Arch Hons, Oxford Brookes</dd></div>
-        <div><dt>Registrations</dt><dd>Ordre des Architectes (FR) · RIBA I &amp; II</dd></div>
-        <div><dt>Languages</dt><dd>English · French · Italian</dd></div>
-      </dl>
+      <ul class="credentials">
+        <li>
+          <span class="mono cred-label">Registration</span>
+          <span>Ordre des Architectes (France) · RIBA Part I &amp; II</span>
+        </li>
+        <li>
+          <span class="mono cred-label">Education</span>
+          <span>M.Arch, The Bartlett, UCL · B.Arch Hons, Oxford Brookes</span>
+        </li>
+        <li>
+          <span class="mono cred-label">Skills</span>
+          <span>Sustainable Design · Architectural Design · SketchUp · AutoCAD</span>
+        </li>
+        <li>
+          <span class="mono cred-label">Languages</span>
+          <span>English · French · Italian</span>
+        </li>
+      </ul>
     </div>
   </div>
 </section>
 
-<section id="contact" class="contact">
-  <div class="section-head">
-    <span class="section-num">03</span>
-    <h2>Contact</h2>
+<section id="contact" class="contact reveal">
+  <div class="section-label">
+    <span class="mono">03 — Contact</span>
+    <span class="rule-line"></span>
   </div>
+
   <div class="contact-inner">
-    <p>For project enquiries, references, or a portfolio of detailed drawings:</p>
-    <p class="email"><a href="mailto:nlundstrom@googlemail.com">nlundstrom@googlemail.com</a></p>
-    <p class="links">
+    <p class="contact-intro">For project enquiries, references, or a portfolio of detailed drawings —</p>
+    <a class="contact-email" href="mailto:nlundstrom@googlemail.com">nlundstrom@<wbr/>googlemail.com</a>
+    <div class="contact-links">
       <a href="https://www.linkedin.com/in/nicolaslundström-a400a922" target="_blank" rel="noopener">LinkedIn</a>
-      <span>·</span>
+      <span class="dot">·</span>
       <a href="https://www.chaminukaestates.com/" target="_blank" rel="noopener">Portfolio</a>
-    </p>
+      <span class="dot">·</span>
+      <a href="https://www.sogoochildrensproject.org" target="_blank" rel="noopener">So Goo Children's Project</a>
+    </div>
   </div>
 </section>
 
 <footer class="site-footer">
-  <p>© <span id="y"></span> Nicolas Lundström · All drawings and imagery belong to their respective owners.</p>
+  <span class="mono">© <span id="yr"></span> Nicolas Lundström</span>
+  <span class="mono muted">All photography belongs to respective copyright holders.</span>
 </footer>
 
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<script src="js/main.js"></script>
 </body>
 </html>

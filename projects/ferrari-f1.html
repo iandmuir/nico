@@ -4,11 +4,16 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Ferrari F1 Sport Management Centre — Nicolas Lundström</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="../index.html">Nicolas&nbsp;Lundström</a>
+<div class="grain"></div>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="../index.html">Nicolas<span class="brand-sep"> — </span>Lundström</a>
   <nav>
     <a href="../index.html#work">Work</a>
     <a href="../index.html#about">About</a>
@@ -17,65 +22,79 @@
 </header>
 
 <section class="project-hero">
-  <a class="back" href="../index.html#work">← All Work</a>
+  <a class="back-link" href="../index.html#work">All Work</a>
   <h1>Ferrari F1 Sport Management Centre</h1>
-  <div class="project-meta">
-    <div><span>Location</span>Maranello, Italy</div>
-    <div><span>Scale</span>24,000 m² SHON</div>
-    <div><span>Role</span>Senior Project Architect</div>
-    <div><span>Phases</span>APS / APD / DCE · Definitivo / Esecutivo</div>
-    <div><span>Office</span>Wilmotte &amp; Associés</div>
+  <div class="project-meta-bar">
+    <div class="project-meta-item"><div class="label">Location</div><div class="value">Maranello, Italy</div></div>
+    <div class="project-meta-item"><div class="label">Scale</div><div class="value">24,000 m² SHON</div></div>
+    <div class="project-meta-item"><div class="label">Role</div><div class="value">Senior Project Architect</div></div>
+    <div class="project-meta-item"><div class="label">Phases</div><div class="value">APS / APD / DCE · Definitivo / Esecutivo</div></div>
+    <div class="project-meta-item"><div class="label">Firm</div><div class="value">Wilmotte &amp; Associés</div></div>
   </div>
 </section>
 
 <div class="project-cover">
-  <div class="img" style="background-image:url('https://picsum.photos/seed/ferrari-hero/1800/1000')"></div>
+  <img class="project-cover-img" src="../images/ferrari.jpg" alt="Ferrari F1 Sport Management Centre, Maranello" />
 </div>
 
-<section class="project-body">
-  <aside>
-    <strong>Client</strong>Ferrari S.p.A.
-    <strong>Programme</strong>Scuderia Ferrari F1 management · Engineering · Simulator · Media
-    <strong>Context</strong>Adjacent to the historic Maranello campus
+<div class="project-content">
+  <aside class="project-sidebar">
+    <div class="sib-group">
+      <strong>Client</strong>
+      Ferrari S.p.A.
+    </div>
+    <div class="sib-group">
+      <strong>Programme</strong>
+      Race strategy · Engineering<br/>Simulator · Driver training<br/>Media &amp; hospitality
+    </div>
+    <div class="sib-group">
+      <strong>Context</strong>
+      Adjacent to the historic<br/>Maranello campus
+    </div>
   </aside>
-  <div>
+
+  <div class="project-text">
     <h2>A building for the Scuderia.</h2>
     <p>
       At the heart of the Maranello campus, the Sport Management Centre houses
-      the operational nerve-system of the Scuderia Ferrari F1 team — race strategy,
-      engineering, driver training, media and hospitality — under a single roof
-      immediately adjacent to Ferrari's historic production facilities.
+      the operational nerve-system of Scuderia Ferrari — race strategy, engineering,
+      driver simulation, media and hospitality — under a single roof immediately
+      adjacent to Ferrari's historic production facilities.
     </p>
-    <h3>Delivery across jurisdictions</h3>
+    <h3>Cross-Jurisdiction Delivery</h3>
     <p>
-      The project was delivered by a French design office under Italian
-      regulatory procedures, moving through APS, APD and DCE in the French
-      model while being documented in Italian <em>definitivo</em> and
-      <em>esecutivo</em> formats. Nicolas led the design-development team
-      and tender package coordination.
+      The project was delivered by a French design office under Italian regulatory
+      procedures, moving through APS, APD and DCE in the French model while being
+      documented simultaneously in Italian <em>definitivo</em> and
+      <em>esecutivo</em> formats. Nicolas led the design-development team and
+      coordinated the tender package.
     </p>
-    <h3>Architectural character</h3>
+    <h3>Architectural Character</h3>
     <p>
-      The architecture is restrained and technical — a fitting counterpart to
-      the engineering culture of its occupant — with a precision-detailed façade
-      system, long horizontal lines, and carefully tuned interior environments
-      for high-performance work.
+      The architecture is deliberately restrained and technical — a fitting
+      counterpart to the precision engineering culture of its occupant — with a
+      carefully detailed façade system, long horizontal lines, and tuned interior
+      environments for high-performance work.
     </p>
   </div>
-</section>
+</div>
 
-<section class="gallery">
-  <div class="img wide" style="background-image:url('https://picsum.photos/seed/ferrari-g1/1600/700')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/ferrari-g2/1200/900')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/ferrari-g3/1200/900')"></div>
-</section>
+<div class="project-gallery">
+  <div class="gallery-img span2" style="background-image:url('https://picsum.photos/seed/ferrari-g1/1600/700')"></div>
+  <div class="gallery-img" style="background-image:url('https://picsum.photos/seed/ferrari-g2/900/675')"></div>
+</div>
 
-<nav class="next-project">
-  <div><div class="label">Next Project</div><a href="tour-bleu-ciel.html">Tour Bleu Ciel →</a></div>
-  <div><a href="../index.html#work">All Work</a></div>
+<nav class="project-nav">
+  <a class="all-link" href="../index.html#work">← All Work</a>
+  <div class="next-link">
+    <span class="next-label">Next Project</span>
+    <a class="next-title" href="tour-bleu-ciel.html">Tour Bleu Ciel →</a>
+  </div>
 </nav>
 
-<footer class="site-footer"><p>© <span id="y"></span> Nicolas Lundström</p></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<footer class="site-footer">
+  <span class="mono">© <span id="yr"></span> Nicolas Lundström</span>
+</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>

@@ -3,12 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>MARS Inc. Global HQ — Nicolas Lundström</title>
+<title>MARS Inc. Global Headquarters — Nicolas Lundström</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
-<header class="site-header">
-  <a class="brand" href="../index.html">Nicolas&nbsp;Lundström</a>
+<div class="grain"></div>
+
+<header class="site-header" id="site-header">
+  <a class="brand" href="../index.html">Nicolas<span class="brand-sep"> — </span>Lundström</a>
   <nav>
     <a href="../index.html#work">Work</a>
     <a href="../index.html#about">About</a>
@@ -17,64 +22,78 @@
 </header>
 
 <section class="project-hero">
-  <a class="back" href="../index.html#work">← All Work</a>
+  <a class="back-link" href="../index.html#work">All Work</a>
   <h1>MARS Inc. Global Headquarters</h1>
-  <div class="project-meta">
-    <div><span>Location</span>McLean, Virginia</div>
-    <div><span>Programme</span>Corporate headquarters campus</div>
-    <div><span>Phases</span>SD / DD / CD / CA</div>
-    <div><span>Office</span>Shalom Baranes Associates</div>
+  <div class="project-meta-bar">
+    <div class="project-meta-item"><div class="label">Location</div><div class="value">McLean, Virginia</div></div>
+    <div class="project-meta-item"><div class="label">Programme</div><div class="value">Corporate headquarters campus</div></div>
+    <div class="project-meta-item"><div class="label">Phases</div><div class="value">SD / DD / CD / CA</div></div>
+    <div class="project-meta-item"><div class="label">Firm</div><div class="value">Shalom Baranes Associates</div></div>
   </div>
 </section>
 
 <div class="project-cover">
-  <div class="img" style="background-image:url('https://picsum.photos/seed/mars-hero/1800/1000')"></div>
+  <img class="project-cover-img" src="../images/mars-hq.jpg" alt="MARS Inc. Global Headquarters, McLean Virginia" />
 </div>
 
-<section class="project-body">
-  <aside>
-    <strong>Client</strong>Mars, Incorporated
-    <strong>Type</strong>Workplace / HQ
-    <strong>Delivery</strong>Full SD through Construction Administration
+<div class="project-content">
+  <aside class="project-sidebar">
+    <div class="sib-group">
+      <strong>Client</strong>
+      Mars, Incorporated
+    </div>
+    <div class="sib-group">
+      <strong>Type</strong>
+      Workplace / HQ
+    </div>
+    <div class="sib-group">
+      <strong>Delivery</strong>
+      Full SD through CA
+    </div>
   </aside>
-  <div>
-    <h2>A headquarters for a family-owned global business.</h2>
+
+  <div class="project-text">
+    <h2>A headquarters shaped by values, not just brief.</h2>
     <p>
       The global headquarters relocates one of the world's largest privately-held
-      companies to a single campus in McLean, consolidating leadership, research
-      and associate functions under one identity. The brief was driven as much
-      by values as by square footage — transparency, flexibility and a workplace
-      that reflects the Mars Five Principles.
+      companies to a consolidated campus in McLean — bringing together leadership,
+      research and associate functions under one identity. The brief was driven
+      as much by the Mars Five Principles as by programme: transparency, flexibility,
+      and a workplace that reflects a deeply human corporate culture.
     </p>
     <h3>Role</h3>
     <p>
       Nicolas contributed across all four delivery phases — schematic design,
-      design development, construction documentation and construction
-      administration — working on the core envelope and interior coordination
-      with a specialist workplace team.
+      design development, construction documentation and construction administration —
+      working on the core envelope and interior coordination with a specialist
+      workplace team.
     </p>
-    <h3>Design intent</h3>
+    <h3>Design Intent</h3>
     <p>
       The architecture privileges daylight and long views through a reserved,
       precisely detailed exterior. Interior volumes are organised around
-      collaboration space and a central atrium, with generous, flexible floor
-      plates for a workforce that operates across dozens of product categories.
+      collaboration space and a central atrium, with generous floor plates
+      for a workforce that operates across dozens of product categories globally.
     </p>
   </div>
-</section>
+</div>
 
-<section class="gallery">
-  <div class="img wide" style="background-image:url('https://picsum.photos/seed/mars-g1/1600/700')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/mars-g2/1200/900')"></div>
-  <div class="img" style="background-image:url('https://picsum.photos/seed/mars-g3/1200/900')"></div>
-</section>
+<div class="project-gallery">
+  <div class="gallery-img span2" style="background-image:url('https://picsum.photos/seed/mars-g1/1600/700')"></div>
+  <div class="gallery-img" style="background-image:url('https://picsum.photos/seed/mars-g2/900/675')"></div>
+</div>
 
-<nav class="next-project">
-  <div><div class="label">Next Project</div><a href="orthodox-center.html">Russian Orthodox Centre →</a></div>
-  <div><a href="../index.html#work">All Work</a></div>
+<nav class="project-nav">
+  <a class="all-link" href="../index.html#work">← All Work</a>
+  <div class="next-link">
+    <span class="next-label">Next Project</span>
+    <a class="next-title" href="orthodox-center.html">Russian Orthodox Centre →</a>
+  </div>
 </nav>
 
-<footer class="site-footer"><p>© <span id="y"></span> Nicolas Lundström</p></footer>
-<script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+<footer class="site-footer">
+  <span class="mono">© <span id="yr"></span> Nicolas Lundström</span>
+</footer>
+<script src="../js/main.js"></script>
 </body>
 </html>
